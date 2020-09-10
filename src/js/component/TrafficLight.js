@@ -7,7 +7,10 @@ export function TrafficLight() {
 			<div className="trafficTop"> </div>
 			<div className="trafficContainer">
 				{currentLight === "red" ? (
-					<div className="red light expanded" />
+					<div
+						className="red light expanded
+							shineRed"
+					/>
 				) : (
 					<div
 						className="red light"
@@ -15,7 +18,7 @@ export function TrafficLight() {
 					/>
 				)}
 				{currentLight === "yellow" ? (
-					<div className="yellow light expanded" />
+					<div className="yellow light expanded shineYellow" />
 				) : (
 					<div
 						className="yellow light"
@@ -23,7 +26,7 @@ export function TrafficLight() {
 					/>
 				)}
 				{currentLight === "green" ? (
-					<div className="green light expanded" />
+					<div className="green light expanded shineGreen" />
 				) : (
 					<div
 						className="green light"
